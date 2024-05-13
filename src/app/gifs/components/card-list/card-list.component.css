@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Sombra en las cartas */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.card-hover-effect:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Texto con el mismo tamaño */
+.card-text {
+  font-size: 14px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Espaciado entre las filas */
+.row {
+  margin-bottom: 20px;
+}
+/* Añadir "..." cuando el texto se recorta */
+.card-text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Mostrar el texto completo en hover */
+.card-hover-effect:hover .card-text-container {
+  overflow: visible;
+  white-space: normal;
+}

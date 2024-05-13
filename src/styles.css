@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/* Agrega estilos para el footer según tus necesidades */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer i {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer i:hover {
+  color: #007bff; /* Cambia el color al hacer hover según tus preferencias */
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#sidebar {
+  height: 100vh;
+  width: 250px;
+}
+
+h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.logo-container {
+  margin-right: 10px; /* Ajusta el valor según tu preferencia */
+}
+img{
+  margin-left: 3px;
+  margin-right: 10px;
+}
+/* Estilos para el contenedor principal */
+#sidebar {
+  background-color: #222349; /* Color de fondo principal */
+  border-right: 1px solid #0be8d9; /* Borde derecho */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el contenedor del logo y el nombre */
+.logo-container {
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el nombre de la app */
+h3 {
+  color: #0be8d9; /* Color del texto */
+}
+
+/* Estilos para la línea horizontal */
+hr {
+  border-top: 1px solid #0be8d9; /* Color de la línea */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el botón Clear History */
+.btn-danger {
+  background-color: #39f89a; /* Color de fondo del botón */
+  border: 1px solid #39f89a; /* Borde del botón */
+}
+
+/* Estilos para los elementos de la lista de historial */
+.list-group-item {
+  background-color: #222349; /* Color de fondo de los elementos de la lista */
+  border: 1px solid #0be8d9; /* Borde de los elementos de la lista */
+  margin-bottom: 10px; /* Espaciado inferior entre elementos de la lista */
+}
+
+/* Estilos para el texto de los elementos de la lista */
+.list-group-item span {
+  color: #0be8d9; /* Color del texto */
+}
+
+/* Estilos para el botón de eliminar en la lista de historial */
+.list-group-item button {
+  color: #39f89a; /* Color del texto del botón */
+}

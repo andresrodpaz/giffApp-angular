@@ -1,0 +1,16 @@
+<div class="row mb-4">
+  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6 mb-3">
+    <div class="card text-center bg-dark border-light shadow card-hover-effect">
+      <!-- Establecer un tamaño fijo para la imagen -->
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top img-fluid"
+        style="height: 150px; object-fit: cover;"
+      >
+      <div class="card-body text-white">
+        <p class="card-text card-text-truncate" [title]="getFullTitle(gif)">{{ gif.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

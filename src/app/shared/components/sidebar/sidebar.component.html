@@ -1,0 +1,37 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <!-- Contenedor para el logo y el nombre -->
+  <div class="d-flex align-items-center mb-4 logo-container">
+    <!-- Logo de la app con margen a la derecha -->
+    <img src="../../../../assets/giff.png" alt="Giff Logo" class="mr-2 img-fluid" style="max-width: 60px; max-height: 60px;">
+
+    <!-- Nombre de la app -->
+    <h3 class="text-light mb-0">Giff</h3>
+  </div>
+
+  <hr class="text-white mb-4">
+
+  <!-- Resto del contenido... -->
+  <!-- Search History with Icons -->
+  <div class="list-group list-reset">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="text-light">Search History</h5>
+
+    </div>
+
+    <button
+      *ngFor="let tag of tags"
+      (click)="searchTag(tag)"
+      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      <span class="text-capitalize">{{ tag }}</span>
+      <button class="btn btn-link btn-sm text-danger" (click)="removeTagFromHistory(tag)">
+        <i class="fas fa-trash"></i>
+      </button>
+    </button>
+
+    <!-- Mostrar el botón Clear History solo si hay elementos en la barra de historial -->
+    <hr class="text-white mb-4" *ngIf="tags.length > 0">
+    <button class="btn btn-danger" *ngIf="tags.length > 0" (click)="clearHistory()">
+      Clear History
+    </button>
+  </div>
+</div>

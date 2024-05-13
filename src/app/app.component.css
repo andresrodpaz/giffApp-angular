@@ -1,0 +1,15 @@
+/* Estilos para el footer con fondo gris oscuro */
+.footer {
+  padding: 20px 0;
+  background-color: #222349; /* Cambia el color de fondo según tus preferencias */
+}
+
+.social-icon {
+  color: #0be8d9; /* Color principal del logo */
+  margin: 0 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #39f89a; /* Color secundario del logo */
+}
